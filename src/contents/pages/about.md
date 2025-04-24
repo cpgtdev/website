@@ -1,6 +1,6 @@
 ---
 title: About
-description: About us
+description: Hello there
 datetime: 2025-04-01T20:41:00.000Z
 gallery: []
 hero:
