@@ -1,16 +1,16 @@
 $primary-h: 0;
-$primary-s: 0;
-$primary-b: 20;
-$primary: #1b1b1b;
+$primary-s: 102;
+$primary-b: 204;
+$primary: #06c;
 
-$secondary: #2d2d2d;
-$color-text-accent: #2d2d2d;
-$color-text-secondary: #050c6b;
-$header-slim-bg-color: #101010;
+$secondary: #0059B3;
+$color-text-accent: #fff;
+$color-text-secondary: #fff;
+$header-slim-bg-color: #0059B3;
 
 $tag-bg-color: #eee;
-$hero-bg-color: #FBF9FB;
-$overlay-bg-color: rgba(0, 0, 0, 0.55);
+$hero-bg-color: #0059B3;
+$overlay-bg-color: rgba(4, 34, 68, 0.55);
 
 @mixin multiline-ellipsis($lines: 3) {
   display: -webkit-box;
