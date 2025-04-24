@@ -27,7 +27,7 @@
   ],
   "header": [
     {
-      "socials": false,
+      "socials": true,
       "nav": [
         {
           "title": "Il Museo",
