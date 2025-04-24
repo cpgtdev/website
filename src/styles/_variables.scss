@@ -3,14 +3,14 @@ $primary-s: 102;
 $primary-b: 204;
 $primary: #06c;
 
-$secondary: #0059B3;
-$color-text-accent: #0059B3;
-$color-text-secondary: #0059B3;
-$header-slim-bg-color: #0059B3;
+$secondary: #2d2d2d;
+$color-text-accent: #2d2d2d;
+$color-text-secondary: #050c6b;
+$header-slim-bg-color: #101010;
 
 $tag-bg-color: #eee;
-$hero-bg-color: #0059B3;
-$overlay-bg-color: rgba(4, 34, 68, 0.55);
+$hero-bg-color: #FBF9FB;
+$overlay-bg-color: rgba(0, 0, 0, 0.55);
 
 @mixin multiline-ellipsis($lines: 3) {
   display: -webkit-box;
