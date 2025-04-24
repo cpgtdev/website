@@ -4,9 +4,9 @@ backend:
   #repository: "https://github.com/teamdigitale/template-museo-civico"
   name: github
   branch: "main" # Branch to update (optional; defaults to master)
-  repo: teamdigitale/template-museo-civico
-  site_domain: template-museo-civico.vercel.app
-  base_url: https://template-museo-civico.vercel.app
+  repo: cpgtdev/website
+  site_domain: cpgt-website.vercel.app
+  base_url: https://cpgt-website.vercel.app
   auth_endpoint: oauth
 
 media_folder: "public/assets" # Location where files will be stored in the repo
