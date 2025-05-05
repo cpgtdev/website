@@ -8,6 +8,7 @@
 .it-footer-main {
   background-color: $primary!important;
 }
+
 .it-footer-small-prints{
   background-color: $header-slim-bg-color!important;
 }
@@ -52,7 +53,12 @@
   margin-right: 8px;
   border-radius: 4px;
   background-color: $tag-bg-color;
-  color: $color-text-secondary;
+  color: $color-text-primary;
   font-weight: 600;
 }
 
+@media (min-width: 1400px) {
+  .ms-n2 {
+    margin-left: -1rem;
+  }
+}

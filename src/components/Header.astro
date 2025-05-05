@@ -8,7 +8,7 @@ const nav = data.nav;
 
 <header class='it-header-wrapper'>
   {false && <div class='it-header-slim-wrapper'>
-    <div class='container-xxl'>
+    <div class='container'>
       <div class='row'>
         <div class='col-12'>
           <div class='it-header-slim-wrapper-content'>
@@ -69,19 +69,17 @@ const nav = data.nav;
   </div>}
   <div class='it-nav-wrapper'>
     <div class='it-header-center-wrapper'>
-      <div class='container-xxl'>
+      <div class='container'>
         <div class='row'>
           <div class='col-12'>
-            <div class='it-header-center-content-wrapper'>
+            <div class='it-header-center-content-wrapper px-0'>
               <div class='it-brand-wrapper'>
                 <a href='/'>
                   {
                     logo ? (
                       <img src={logo} height={120 } class="mx-2" alt={"logo"}/>
                     ) : (
-                      <svg class='icon' aria-hidden='true'>
-                        <use href='/icons/sprites.svg#it-pa' />
-                      </svg>
+                      <img src="/assets/logo-repubblica-italiana-56a773ac.svg" height={60} class="mx-2" alt={"logo"}/>
                     )
                   }
                   <div class='it-brand-text'>
@@ -128,12 +126,12 @@ const nav = data.nav;
       </div>
     </div>
     <div class='it-header-navbar-wrapper'>
-      <div class='container-xxl'>
+      <div class='container'>
         <div class='row'>
           <div class='col-12'>
             <!--start nav-->
             <nav
-              class='navbar navbar-expand-lg has-megamenu'
+              class='navbar navbar-expand-lg has-megamenu px-0'
               aria-label='Navigazione principale'
             >
               <button
@@ -167,7 +165,7 @@ const nav = data.nav;
                           title: string;
                           link: string;
                           childs?: [{ title: string; link: string }];
-                        }) => {
+                        }, index: number) => {
                           if (item.childs) {
                             if (item.childs.length < 4) {
                               return (
@@ -226,7 +224,7 @@ const nav = data.nav;
                               }
 
                               return (
-                                <li class='nav-item dropdown megamenu'>
+                                <li class={`nav-item dropdown megamenu ${index === 0 ? 'ms-n2' : ''}`}>
                                   <button
                                     type='button'
                                     class='nav-link dropdown-toggle px-lg-2 px-xl-3'

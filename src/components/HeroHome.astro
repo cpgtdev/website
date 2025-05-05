@@ -69,28 +69,23 @@ const cn =
   }
 </style>
 
-<div class='container'>
-  <div class='row'>
-    <div class='col-12'>
-      <section class='heroHome'>
-        <!-- - img-->
-        <div class='bg-img img-responsive-wrapper'>
-          <div class='img-responsive'>
-            <div class='img-wrapper'>
-              <img src={image} alt={title} />
-            </div>
-          </div>
-        </div>
-        <!-- - texts-->
-        <div class=''>
-          <h1>{title}</h1>
-          <p class='d-none d-lg-block'>
-            {text}
-          </p>
-        </div>
-        <!-- - overlay-->
-        {overlayShow && <div class='bg-overlay' style={cn} />}
-      </section>
-    </div>
+<section class="it-hero-wrapper it-primary it-overlay">
+  <!-- - img-->
+  <div class="img-responsive-wrapper">
+     <div class="img-responsive">
+        <div class="img-wrapper"><img src={image} alt={title}></div>
+     </div>
   </div>
-</div>
+  <!-- - texts-->
+  <div class="container">
+     <div class="row">
+        <div class="col-12">
+           <div class="it-hero-text-wrapper bg-dark">
+              <h2>{title}</h2>
+              <p class="d-none d-lg-block">{text}</p>
+              <div class="it-btn-container"><a class="btn btn-sm btn-outline-primary" href="#">Accesso al PTT</a></div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>

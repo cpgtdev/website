@@ -2,14 +2,15 @@ $primary-h: 0;
 $primary-s: 102;
 $primary-b: 204;
 $primary: #06c;
+$primary-c: rgba(0,76.5,153);
 
+$color-text-primary: #33485c;
 $secondary: #2d2d2d;
-$color-text-accent: #2d2d2d;
-$color-text-secondary: #050c6b;
-$header-slim-bg-color: #101010;
+$color-text-accent: #33485c;
+$header-slim-bg-color: #036;
 
-$tag-bg-color: #eee;
-$hero-bg-color: #FBF9FB;
+$tag-bg-color: #e5e5e5;
+$hero-bg-color: #f2f7fc;
 $overlay-bg-color: rgba(0, 0, 0, 0.55);
 
 @mixin multiline-ellipsis($lines: 3) {

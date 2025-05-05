@@ -1,8 +1,8 @@
 {
   "hero": {
     "image": "/assets/interior-national-gallery-of-art-washington-dc.jpg",
-    "title": "Arte, storia e cultura tutte in unico Museo.",
-    "text": "Il museo di arte moderna e contemporanea della città di Roma. Esplora la storia artistica italiana dal 1900 ad oggi.",
+    "title": "Consiglio di Presidenza della Giustizia Tributaria",
+    "text": "Organo di autogoverno dei giudici tributari. Esplora le funzioni, la composizione e il ruolo istituzionale del CPGT.",
     "overlayShow": true,
     "overlayColor": "",
     "overlayAlpha": 5
@@ -14,58 +14,20 @@
     "url": "https://mailinglist/numxxxx"
   },
   "cta": {
-    "title": "Vuoi supportare il museo?",
-    "text": "Fai una donazione e diventa nostro membro",
+    "title": "Dove trovarci",
+    "text": "CPGT Roma - Via Solferino, 15 - 00185. Telefono: +39 06.9383065. Fax: 06.4440729. Mail: UfficioSegreteriaCPGT@finanze.it. Pec: UfficioSegreteriaCPGT@pce.finanze.it",
     "show": true,
     "link": {
-      "label": "DONA ORA",
+      "label": "Scrivici",
       "external": false,
-      "url": "/project#support"
+      "url": "mailto:UfficioSegreteriaCPGT@finanze.it"
     }
   },
   "sections": [
-    {
-      "title": "Eventi in evidenza",
-      "type": "events"
-    },
-    {
-      "title": "Immergiti nel museo",
-      "type": "works"
-    },
     {
       "title": "Le ultime notizie",
       "type": "news"
     }
   ],
-  "blocks": [
-    {
-      "type": "featuredSection",
-      "inverted": false,
-      "link": {
-        "external": true,
-        "label": "/museum",
-        "url": "vedi"
-      },
-      "title": "Area Espositiva",
-      "text": "L’esposizione racconta con un centinaio di opere il fondamentale ruolo di Torino per l’affermarsi del Liberty, un’arte che nella capitale sabauda diviene il fulcro di una storia che travolge ogni aspetto della vita e della società.",
-      "image": "/assets/interior-national-gallery-of-art-washington-dc.jpg"
-    },
-    {
-      "type": "imageBlock",
-      "image": "/assets/Dc.jpg",
-      "alt": "10 mila lire"
-    },
-    {
-      "type": "featuredSection",
-      "inverted": false,
-      "link": {
-        "external": true,
-        "url": "/project",
-        "label": "leggi tutto"
-      },
-      "title": "Il progetto",
-      "text": "L’esposizione racconta con un centinaio di opere il fondamentale ruolo di Torino per l’affermarsi del Liberty, un’arte che nella capitale sabauda diviene il fulcro di una storia che travolge ogni aspetto della vita e della società.",
-      "image": "/assets/worlds-best-museums.jpg"
-    }
-  ]
+  "blocks": []
 }
