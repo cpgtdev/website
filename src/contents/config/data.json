@@ -89,20 +89,20 @@
               "title": "Giustizia Tributaria",
               "links": [
                 {
-                  "title": "Organizza la visita",
-                  "url": "/musem#visit"
+                  "title": "Interpelli",
+                  "url": "/interpelli"
                 },
                 {
-                  "title": "Esplora il museo",
-                  "url": "/musem#explore"
+                  "title": "Concorsi",
+                  "url": "/concorsi"
                 },
                 {
-                  "title": "Mostre ed eventi",
-                  "url": "/events"
+                  "title": "Comunicati",
+                  "url": "/comunicati"
                 },
                 {
-                  "title": "Educazione e ricerca",
-                  "url": "/museum#edu"
+                  "title": "Convegni ed eventi",
+                  "url": "/convegni-ed-eventi"
                 }
               ]
             },
@@ -111,24 +111,24 @@
               "title": "Chi Siamo",
               "links": [
                 {
-                  "title": "Organizzazione",
-                  "url": "/about#org"
+                  "title": "Il Consiglio di Presidenza",
+                  "url": "/il-consiglio-di-presidenza"
                 },
                 {
-                  "url": "/about#people",
-                  "title": "Dirigenti e personale"
+                  "url": "/organigramma",
+                  "title": "Organigramma"
                 },
                 {
-                  "title": "Uffici e orari",
-                  "url": "/about#info"
+                  "title": "Pari opportunità",
+                  "url": "/pari-opportunita"
                 },
                 {
-                  "title": "Supporta il museo",
-                  "url": "/about#support"
+                  "title": "Convenzioni e protocolli",
+                  "url": "/convenzioni-e-protocolli-del-cpgt"
                 },
                 {
-                  "title": "Lavora con noi",
-                  "url": "/about#job"
+                  "title": "Ufficio Elettorale Centrale Elezioni",
+                  "url": "/ufficio-elettorale-centrale-elezioni-cpgt"
                 }
               ]
             },
@@ -138,23 +138,19 @@
               "links": [
                 {
                   "title": "Amministrazione trasparente",
-                  "url": "/project"
+                  "url": "/amministrazione-trasparente"
                 },
                 {
-                  "url": "/project#rules",
-                  "title": "Regolamenti"
-                },
-                {
-                  "title": "Bandi e gare",
-                  "url": "/project"
+                  "title": "Concorsi",
+                  "url": "/amministrazione/concorsi"
                 },
                 {
                   "title": "Bilanci",
-                  "url": "/project"
+                  "url": "/amministrazione/bilanci"
                 },
                 {
-                  "title": "Beni immobili e patrimoni",
-                  "url": "/project"
+                  "title": "Beni immobili, patrimonio",
+                  "url": "/amministrazione/beni-immobili-patrimonio"
                 }
               ]
             }
