@@ -3,6 +3,7 @@ import { getCollection } from "astro:content";
 import Layout from "../../layouts/Layout.astro";
 import HeroDetail from "../../components/HeroDetail.astro";
 import BreadCrumbs from "../../components/BreadCrumbs.astro";
+import FileBlock from "../../components/FileBlock.astro";
 
 export async function getStaticPaths() {
   const items = await getCollection("news");
@@ -19,13 +20,29 @@ export async function getStaticPaths() {
 
 const { slug } = Astro.params;
 const { item } = Astro.props;
+const { blocks } = item.data;
 ---
+
 <Layout>
-  <div class='container my-2'>
-    <BreadCrumbs path={["news",slug]}/>
+  <div class="container my-2">
+    <BreadCrumbs path={["news", slug]} />
   </div>
   <HeroDetail item={item} />
   <div class="container contents">
     <p set:html={item.rendered?.html} />
+    {
+      blocks && (
+        <div class="content-wrap border-top mt-5 py-2">
+          {blocks.map((b: any) => {
+            switch (b.type) {
+              case "fileBlock":
+                return <FileBlock {...b} />;
+              default:
+                return <div>{b.type}</div>;
+            }
+          })}
+        </div>
+      )
+    }
   </div>
 </Layout>

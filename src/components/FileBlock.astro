@@ -1,0 +1,13 @@
+---
+const props = Astro.props;
+const { file, fileText } = props;
+---
+
+<div class="my-2">
+  <a href={file} download class="d-flex align-items-center">
+    <svg class="icon icon-sm me-2">
+      <use href="/icons/sprites.svg#it-download"></use>
+    </svg>
+    {fileText}
+  </a>
+</div>

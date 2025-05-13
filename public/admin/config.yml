@@ -200,6 +200,17 @@ collections:
       - { label: "Publish Date", name: "pubDate", widget: "datetime" }
       - { label: "Tags", name: "tags", widget: "list", default: ["news"], required: false }
       - { label: "Body", name: "body", widget: "markdown" }
+      - label: "Blocks"
+        name: "blocks"
+        widget: "list"
+        required: false
+        types:
+          - label: "File Block"
+            name: "fileBlock"
+            widget: "object"
+            fields:
+              - { label: "File", name: "file", widget: "file" }
+              - { label: "File text", name: "fileText", widget: "string" }
   - name: "events"
     label: "Events" # Used in the UI
     folder: "src/contents/events" # The path to the folder where the documents are stored

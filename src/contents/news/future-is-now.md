@@ -14,6 +14,13 @@ pubDate: 2025-04-01T17:09:00.000Z
 tags:
   - news
   - intelligenza-artificiale
+blocks:
+  - type: fileBlock
+    file: /assets/sample.pdf
+    fileText: Allegato Sample
+  - type: fileBlock
+    file: /assets/Boxing-gym.jpg
+    fileText: Allegato Esempio 2
 ---
 # Guida Completa al Markdown
 
