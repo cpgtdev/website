@@ -4,6 +4,7 @@ import { glob, file } from "astro/loaders";
 const news = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/contents/news" }),
 });
+
 const works = defineCollection({
   loader: glob({ pattern: "**/*.md", base: "./src/contents/works" }),
 });

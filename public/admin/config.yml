@@ -67,7 +67,7 @@ collections:
             widget: "list"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Kind", name: "type", widget: "select",  options: ["news", "events", "works"]}
+              - { label: "Kind", name: "type", widget: "select",  options: ["news", "events", "interpelli", "concorsi", "comunicati", "convegni-ed-eventi"]}
           - label: "NewsLetter"
             name: "newsletter"
             widget: "object"
@@ -93,7 +93,6 @@ collections:
                   - { label: "Label", name: "label", widget: "string" , required: false }
                   - { label: "Url Esterno", name: "external", widget: "boolean",  default: true}
                   - { label: "url", name: "url", widget: "string"}
-
   - name: pages
     label: "Pages" # Used in the UI
     folder: "src/contents/pages" # The path to the folder where the documents are stored
@@ -224,8 +223,8 @@ collections:
         widget: "object"
         required: false
         fields:
-            - { label: "Url", name: "url", widget: "image" }
-            - { label: "Alt", name: "alt", widget: string, default: "thumb" }
+            - { label: "Url", name: "url", widget: "image", required: false }
+            - { label: "Alt", name: "alt", widget: string, default: "thumb", required: false }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Description", name: "description",  default: "" }
       - { label: "Start Date", name: "from", widget: "datetime", required: false }

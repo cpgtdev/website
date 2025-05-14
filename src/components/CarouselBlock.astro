@@ -1,0 +1,47 @@
+---
+const props = Astro.props;
+const { items, tag } = props;
+---
+
+<div
+  class="it-carousel-wrapper it-carousel-landscape-abstract-three-cols splide"
+  data-bs-carousel-splide
+>
+  <div class="splide__track ps-lg-3 pe-lg-3">
+    <ul class="splide__list it-carousel-all">
+      {
+        items?.map((item: any) => (
+          <li class="splide__slide">
+            <div class="it-single-slide-wrapper">
+              <div class="card-wrapper card-space">
+                <div class="card card-bg">
+                  <div class="card-body">
+                    <h3 class="card-title h5 text-truncate">
+                      {item.data.title}
+                    </h3>
+                    {item.data.description && (
+                      <p class="card-text text-truncate-4">
+                        {item.data.description}
+                      </p>
+                    )}
+                    <a class="read-more" href={`/${tag}/${item.id}`}>
+                      <span class="text">
+                        Leggi di più{" "}
+                        <span class="visually-hidden">
+                          {item.data.description}
+                        </span>
+                      </span>
+                      <svg class="icon">
+                        <use href="https://italia.github.io/bootstrap-italia/dist/svg/sprites.svg#it-arrow-right" />
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</div>

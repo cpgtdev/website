@@ -13,6 +13,7 @@ location: piazza labomba esk
 url: https://eventsbrite.com
 tags:
   - events
+  - interpelli
 ---
 I really like using **Markdown**.
 

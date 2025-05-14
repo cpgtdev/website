@@ -6,14 +6,25 @@ import CardWork from "../components/CardWork.astro";
 import HeroHome from "../components/HeroHome.astro";
 import CTA from "../components/CTA.astro";
 import CardNews from "../components/CardNews.astro";
+import CarouselBlock from "../components/CarouselBlock.astro";
 import FeaturedSection from "../components/FeaturedSection.astro";
 
 // Get all entries from a collection.
 // Requires the name of the collection as an argument.
 const allNews = await getCollection("news");
 const allEvents = await getCollection("events");
-const allWorks = await getCollection("works");
-
+const allInterpelli = allEvents?.filter((item) =>
+  item.data.tags?.includes("interpelli"),
+);
+const allConcorsi = allEvents?.filter((item) =>
+  item.data.tags?.includes("concorsi"),
+);
+const allComunicati = allEvents?.filter((item) =>
+  item.data.tags?.includes("comunicati"),
+);
+const allConvegniEdEventi = allEvents?.filter((item) =>
+  item.data.tags?.includes("convegni-ed-eventi"),
+);
 const home: any = await getCollection("home");
 
 const hero = home.find((item: any) => item.id === "hero")?.data;
@@ -28,7 +39,7 @@ const newsletter = home.find((item: any) => item.id === "newsletter")?.data;
 
   {
     blocks && (
-      <div class='content-wrap'>
+      <div class="content-wrap">
         {blocks.map((b: any) => {
           switch (b.type) {
             case "featuredSection":
@@ -36,12 +47,12 @@ const newsletter = home.find((item: any) => item.id === "newsletter")?.data;
             case "imageBlock":
               return (
                 <div>
-                  <div class='img-responsive-wrapper ratio ratio-16x9'>
+                  <div class="img-responsive-wrapper ratio ratio-16x9">
                     <figure>
                       <img
                         src={b.image}
                         alt={b.alt}
-                        class='w-100 h-100 object-fit-cover'
+                        class="w-100 h-100 object-fit-cover"
                       />
                     </figure>
                   </div>
@@ -60,14 +71,14 @@ const newsletter = home.find((item: any) => item.id === "newsletter")?.data;
       const cn = odd ? "" : "bg-gray";
       return (
         <div class={cn}>
-          <div class='container my-5'>
-            <div class='my-5'>
-              <h3 class='heading-3 heading-3-lg'>{section.title}</h3>
+          <div class="container my-5">
+            <div class="my-5">
+              <h3 class="heading-3 heading-3-lg">{section.title}</h3>
               {section.type === "news" && (
-                <div class='mt-5'>
-                  <div class='row row-cols-1 row-cols-lg-3 gx-lg-5 gy-5'>
+                <div class="mt-5">
+                  <div class="row row-cols-1 row-cols-lg-3 gx-lg-5 gy-5">
                     {allNews.map((item) => (
-                      <div class='col'>
+                      <div class="col">
                         <CardNews {...item.data} slug={item.id} />
                       </div>
                     ))}
@@ -75,8 +86,8 @@ const newsletter = home.find((item: any) => item.id === "newsletter")?.data;
                 </div>
               )}
               {section.type === "events" && (
-                <div class='row'>
-                  <div class='row gap-4 mt-5'>
+                <div class="row">
+                  <div class="row gap-4 mt-5">
                     {allEvents.map((item) => (
                       <div>
                         <CardEvent {...item.data} slug={item.id} />
@@ -85,16 +96,24 @@ const newsletter = home.find((item: any) => item.id === "newsletter")?.data;
                   </div>
                 </div>
               )}
-              {section.type === "works" && (
-                <div class='row'>
-                  <div class='mt-5'>
-                    <div class='row row-cols-1 row-cols-lg-3 gx-lg-5 gy-5'>
-                      {allWorks.map((item) => (
-                        <div class='col'>
-                          <CardWork {...item.data} slug={item.id} />
-                        </div>
-                      ))}
-                    </div>
+              {section.type === "interpelli" && (
+                <div class="row">
+                  <div class="row gap-4 mt-5">
+                    <CarouselBlock tag="interpelli" items={allInterpelli} />
+                  </div>
+                </div>
+              )}
+              {section.type === "concorsi" && (
+                <div class="row">
+                  <div class="row gap-4 mt-5">
+                    <CarouselBlock tag="concorsi" items={allConcorsi} />
+                  </div>
+                </div>
+              )}
+              {section.type === "comunicati" && (
+                <div class="row">
+                  <div class="row gap-4 mt-5">
+                    <CarouselBlock tag="comunicati" items={allComunicati} />
                   </div>
                 </div>
               )}
@@ -106,16 +125,16 @@ const newsletter = home.find((item: any) => item.id === "newsletter")?.data;
   }
   {
     newsletter && newsletter.show && (
-      <div class='container my-5 bg-gray'>
-        <div class='text-center'>
+      <div class="container my-5 bg-gray">
+        <div class="text-center">
           <h1>{newsletter.title}</h1>
           {newsletter.text && (
-            <p class='d-none d-lg-block'>{newsletter.text}</p>
+            <p class="d-none d-lg-block">{newsletter.text}</p>
           )}
           {newsletter.link && (
             <a
               href={newsletter.link.url}
-              class='btn btn-secondary btn-lg'
+              class="btn btn-secondary btn-lg"
               target={newsletter.link.external ? "_blank" : ""}
             >
               {newsletter.link.label}

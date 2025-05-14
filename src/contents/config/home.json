@@ -27,6 +27,18 @@
     {
       "title": "Le ultime notizie",
       "type": "news"
+    },
+    {
+      "title": "Interpelli",
+      "type": "interpelli"
+    },
+    {
+      "type": "concorsi",
+      "title": "Concorsi"
+    },
+    {
+      "title": "Comunicati",
+      "type": "comunicati"
     }
   ],
   "blocks": []

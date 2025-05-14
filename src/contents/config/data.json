@@ -74,6 +74,10 @@
         {
           "title": "News",
           "link": "/news"
+        },
+        {
+          "title": "Contatti",
+          "link": "/contatti"
         }
       ]
     }
