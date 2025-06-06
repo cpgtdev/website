@@ -83,7 +83,7 @@ collections:
             required: false
             fields:
               - { label: "Title", name: "title", widget: "string" , required: false }
-              - { label: "Text", name: "text", widget: "string" , required: false }
+              - { label: "Text", name: "text", widget: "markdown" , required: false }
               - { label: "show", name: "show", widget: "boolean",  default: true}
               - label: "link"
                 name: "link"

@@ -1,4 +1,6 @@
 ---
+import { marked } from "marked";
+
 const props = Astro.props;
 console.log("hero", props);
 const { title, text, link, show } = props;
@@ -21,11 +23,17 @@ const { title, text, link, show } = props;
     color: white;
     margin-bottom: 1rem;
   }
-  .cta p {
-    font-size: 1.2rem;
+
+  .cta .cta-text p {
     color: white;
-    margin-bottom: 1rem;
+    font-weight: 600;
   }
+
+  .cta .cta-text a {
+    color: white;
+    font-weight: 600;
+  }
+
   .cta .container {
     position: relative;
     z-index: 1;
@@ -51,7 +59,7 @@ const { title, text, link, show } = props;
       <div class='col-12'>
         <div class='text-center'>
           <h1>{title}</h1>
-          {text && <p class='d-none d-lg-block'>{text}</p>}
+          {text && <div class='cta-text' set:html={marked.parse(text)} />}
         </div>
         {
           link && (
