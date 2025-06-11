@@ -1,4 +1,3 @@
-local_backend: true
 backend:
   # name: "git-gateway"
   #repository: "https://github.com/teamdigitale/template-museo-civico"
@@ -9,6 +8,7 @@ backend:
   base_url: https://cpgt-website.vercel.app
   auth_endpoint: oauth
 
+local_backend: true
 media_folder: "public/assets" # Location where files will be stored in the repo
 public_folder: "/assets" # The src attribute for uploaded media
 
