@@ -1,10 +1,11 @@
 ---
 image:
-  alt: A generated image rappresenting a girl with an oculus with a lot of data on
+  alt:
+    A generated image rappresenting a girl with an oculus with a lot of data on
     the screen written with symbols, the girl is dressed with something organic
     and transparent, backwards a blurred city in a rainy day with Chinese
     restaurant lights
-  url: /assets/edo6365_a_cyberpunk_chinese_woman_standing_motionless_in_a_neon_303d3daf-5adc-40d5-96b2-9316f646c7c0.png
+  url: /assets/pic1.jpg
 title: Inaugurazione nuova sala delle Installazioni
 description: L'inaugurazione della nuova sala delle Installazioni presso il
   nostro museo d'arte segna un'epoca di innovazione e creatività senza
@@ -19,9 +20,10 @@ blocks:
     file: /assets/sample.pdf
     fileText: Allegato Sample
   - type: fileBlock
-    file: /assets/Boxing-gym.jpg
+    file: /assets/pic1.jpg
     fileText: Allegato Esempio 2
 ---
+
 # Guida Completa al Markdown
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius, tortor in tristique convallis, elit libero fermentum nisi, nec facilisis purus turpis vel lectus. In hac habitasse platea dictumst. Vestibulum eget malesuada enim. Pellentesque dapibus augue eu velit pharetra, a malesuada libero tempus. Donec ultrices mi non metus fermentum, et convallis metus consectetur.
@@ -39,8 +41,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam a massa sed libero 
 Per evidenziare parti di testo, possiamo utilizzare diversi stili:
 
 - **Grassetto**: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vehicula lorem ac sem sodales dapibus.
-- *Corsivo*: Ut vestibulum justo a erat vehicula, in sollicitudin eros pretium. Quisque tempor lorem id eros dignissim dapibus.
-- ***Grassetto e Corsivo***: Integer volutpat quam sed erat iaculis, ut suscipit sapien fermentum. Duis pharetra arcu a turpis feugiat malesuada.
+- _Corsivo_: Ut vestibulum justo a erat vehicula, in sollicitudin eros pretium. Quisque tempor lorem id eros dignissim dapibus.
+- **_Grassetto e Corsivo_**: Integer volutpat quam sed erat iaculis, ut suscipit sapien fermentum. Duis pharetra arcu a turpis feugiat malesuada.
 - ~~Barrato~~: Curabitur id fringilla odio. Nunc convallis ex eget lorem molestie vulputate.
 
 ---
@@ -87,11 +89,11 @@ Esempio con titolo: [Markdown Guide](https://example.com "Guida completa al Mark
 
 Le tabelle consentono di organizzare dati in modo strutturato.
 
-| Nome       | Età | Professione  |
-|------------|----|-------------|
-| Mario      | 30 | Ingegnere    |
-| Lucia      | 25 | Designer     |
-| Giovanni   | 35 | Programmatore |
+| Nome     | Età | Professione   |
+| -------- | --- | ------------- |
+| Mario    | 30  | Ingegnere     |
+| Lucia    | 25  | Designer      |
+| Giovanni | 35  | Programmatore |
 
 ---
 

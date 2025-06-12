@@ -1,6 +1,6 @@
 ---
 image:
-  url: /assets/Dc.jpg
+  url: /assets/pic3.jpg
   alt: The Astro logo on a dark background with a pink glow.
 title: È iniziato il restauro della tela “Il binario”
 description: L'inizio del restauro della tela "Il binario" segna un momento
@@ -13,7 +13,8 @@ tags:
   - news
   - museum
 ---
-Welcome to my *new blog* about learning Astro! Here, I will share my learning journey as I build a new website.
+
+Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
 
 ## What I've accomplished
 
@@ -24,10 +25,6 @@ Welcome to my *new blog* about learning Astro! Here, I will share my learning jo
 ## What's next
 
 I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
-
-
-
-
 
 ![a pound in the forest](/assets/cb82814b4d161601.jpg "a sample image")
 

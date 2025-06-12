@@ -1,6 +1,6 @@
 ---
 image:
-  url: https://docs.astro.build/assets/rose.webp
+  url: /assets/pic2.jpg
   alt: The Astro logo on a dark background with a pink glow.
 title: Nuovo direttore per la sezione Archiettura urbana
 description: Il nostro museo d'arte accoglie con entusiasmo il nuovo direttore
